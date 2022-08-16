@@ -1,0 +1,108 @@
+/*
+
+1 Selector por etiqueta: cambia el estilo a todas las etiquetas 
+en cuestion, se coloca directamente el nombre de la etiqueta
+2. Selector por clase cambia o modifica el estilo del elemento
+en donde se mencione  la clase  atributo (class) para crear un estilo
+por clase se coloca .nombreEstilo
+3.Selector por identificador es decir por el (id)
+modifica el estilo del elemento que posea (id)
+4. selector universal *
+*/
+
+/* Lenguaje servidor java /
+
+/* Por etiqueta*/
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  background-color:rgb(176, 224, 230) ;
+}
+/* selector por clase*/
+.subtitulo{
+    text-align: center;
+    color: 	rgb(255, 69, 0);
+    background-color: gray;
+}
+/* 3. Por id*/
+#info{
+    border-radius: 15px;
+    background-color: rgb(154, 205, 50);
+    color: black;
+    padding: 15px ;
+
+}
+/* 4 Por un atributo*/
+[class]{
+    /*SE APLICARA A TODOS LOS ELEMENTOS QUE TENGAN ATRIBUTO CLASS*/
+
+    background-color: deepskyblue;
+}
+
+/* COMBINADORES*/
+a[href]{
+    text-align: center;
+    margin: 3%;
+    color: peru;
+    text-decoration:  none;
+}
+/*Utilizando sufijos*/
+a[href$=".com"]{
+    margin-left:4% ;
+    color: greenyellow;
+}
+/*Prefijo*/
+[class^="as"]{
+    font-size:  25px;
+
+}
+/*HEMANOS*/
+/*1 Ejemplo de combinador donde se seleccione solamente al hermano siguiente*/
+div + p {
+    background-color: goldenrod;
+    text-align: justify;
+    text-decoration: underline;
+    border: black;
+  }
+
+  /*2. Combinador donde se seleccionen todos los hermanos siguientes*/
+  div ~ p{
+    text-align: center;
+     margin: 20px;
+     background-color: brown;
+     border: 8%;
+  }
+  /*3.Agrupación de selectores */
+h3,h4,h5{
+    text-decoration: underline;
+    background-color:  gainsboro;
+    border: 50px;
+    text-align: center;
+}
+/*4 Ejemplo de decendencia directa*/
+span{ background-color: red;
+}
+div span{ background-color: aquamarine; }
+
+/*5 Selectores multiples*/
+.mulr{
+    text-decoration: underline;
+    background-color:  rosybrown;
+    border: 25px;
+    text-align: center;
+}
+#mule{
+    border-radius: 15px;
+    background-color: goldenrod;
+    color: black;
+    padding: 15px ;
+}
+/*6 Selectores fijos directos*/
+ div>ul{
+    text-align: center;
+    background-color: burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ 
+
